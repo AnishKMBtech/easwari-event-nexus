@@ -1,6 +1,6 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
+import TypewriterText from "@/components/TypewriterText";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +15,11 @@ const Index = () => {
       <section className={`min-h-screen flex items-center justify-center px-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-6xl md:text-8xl font-black mb-8 leading-tight tracking-tight uppercase">
-            Your Campus,<br />Your Stage.
+            <TypewriterText 
+              text="Your Campus, Your Stage." 
+              speed={80}
+              className="block"
+            />
           </h1>
           <p className="text-2xl md:text-3xl font-bold mb-6 tracking-wide uppercase">
             Manage. Discover. Participate.
@@ -26,14 +30,14 @@ const Index = () => {
           <p className="text-lg mb-12 font-medium max-w-2xl mx-auto">
             SRM Easwari Engineering College
           </p>
-          <Button className="bg-black text-white px-12 py-4 text-lg font-bold tracking-widest uppercase rounded-none hover:bg-gray-800 transition-all duration-300 w-full md:w-auto">
+          <Button className="bg-black text-white px-12 py-4 text-lg font-bold tracking-widest uppercase rounded-sm hover:bg-gray-800 transition-all duration-300 w-full md:w-auto">
             Enter Platform
           </Button>
         </div>
       </section>
 
       {/* What is Vibe-Check Section */}
-      <section className={`py-32 px-4 border-t-2 border-black transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <section className={`py-32 px-4 border-t-4 border-black transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase tracking-wide">
             What is<br />Vibe-Check?
@@ -48,7 +52,7 @@ const Index = () => {
       </section>
 
       {/* Why Vibe-Check Section */}
-      <section className={`py-32 px-4 border-t-2 border-black transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <section className={`py-32 px-4 border-t-4 border-black transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black text-center mb-20 uppercase tracking-wide">
             Why Vibe-Check?
@@ -75,7 +79,7 @@ const Index = () => {
       </section>
 
       {/* Meet the Developer Section */}
-      <section className={`py-32 px-4 border-t-2 border-black transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <section className={`py-32 px-4 border-t-4 border-black transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-black mb-16 uppercase tracking-wide">
             Meet the<br />Developer
@@ -105,7 +109,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className={`py-16 px-4 border-t-2 border-black transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <footer className={`py-16 px-4 border-t-4 border-black transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-black mb-8 uppercase tracking-wide">
             Vibe-Check
